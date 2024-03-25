@@ -1,3 +1,4 @@
+import React from 'react';
 import {
     Box,
     Flex,
@@ -80,7 +81,7 @@ import {
                     </a>
                   </Button>
                   <Button className="btnRes" variant="ghost">
-                    <a href="#Contact">
+                    <a href="#Social">
                       <b>Social</b>
                     </a>
                   </Button>
