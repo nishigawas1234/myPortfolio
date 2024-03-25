@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Flex, Button } from "@chakra-ui/react";
+import { Box, Text, Flex, Button  ,useColorModeValue} from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
 import nishi_resume from "../Nishigandha_gawas_resume.pdf";
 
@@ -9,10 +9,10 @@ export default function Intro() {
   };
 
   return (
-    <Flex id="about" h="800px" justifyContent="center" alignItems="center" flexDir="column"  bg="#0c0c0c">
+    <Flex id="intro" h="700px" justifyContent="center" alignItems="center" flexDir="column"  bg={useColorModeValue("gray.100", "#0c0c0c")}>
 
         <Text fontSize="24px">Hello , I am Nishigandha </Text>
-
+         
         <ReactTyped
           style={{
             fontSize: "48px",
@@ -21,6 +21,7 @@ export default function Intro() {
           }}
           strings={["A passionate Frontend Developer "]}
           typeSpeed={100}
+          
           loop
         />
    
