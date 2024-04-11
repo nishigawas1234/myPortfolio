@@ -153,7 +153,7 @@ export default function Intro() {
           _hover={{ bg: "hsl(217.2deg 32.6% 17.5% / 80%)" }}
           color="white"
           variant="solid"
-          onClick={() => {}}
+          href="#Contact"
           size={["sm", "md"]}
           fontWeight="normal"
           download="nishi_resume"

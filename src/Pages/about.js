@@ -18,11 +18,11 @@ export default function AboutUs() {
   return (
     <Flex
       id="about"
-      h="800px"
+      p="60px 0"
       justifyContent="center"
       alignItems="center"
       flexDir="column"
-      bg={useColorModeValue("gray.100", "#0c0c0c")}
+      bg={useColorModeValue("gray.100", "#1a1a1a")}
     >
       <Text fontSize="4xl" fontWeight="bold" color={"red"} mb={16} mt={2}>
         About
