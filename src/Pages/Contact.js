@@ -24,6 +24,7 @@ export default function Contact() {
       alignItems="center"
       bg={useColorModeValue("gray.100", "#0c0c0c")}
       pb={12}
+      p="60px 0"
     >
        <Box p={8} borderRadius="lg"  boxShadow="lg" w={{ base: "100%", md: "40%" }}>
         <Text fontSize="4xl" fontWeight="bold" color={"red"} mb={16} mt={2}>

@@ -69,6 +69,11 @@ import {
                       <b>About</b>
                     </a>
                   </Button>
+                  <Button className="btnRes" variant="ghost"> 
+                    <a href="#Skills">
+                      <b>Skills</b>
+                    </a>
+                  </Button>
                   <Button className="btnRes" variant="ghost">
                     <a href="#Projects">
                       <b>Projects</b>
@@ -275,6 +280,7 @@ import {
                       <b>Skills</b>
                     </a>
                   </Button>
+
   
                   <Button
                     onClick={isOpen ? onClose : onOpen}
