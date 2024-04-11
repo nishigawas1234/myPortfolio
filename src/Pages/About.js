@@ -17,7 +17,7 @@ export default function AboutUs() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Flex
-      id="about"
+      id="About"
       p="60px 0"
       justifyContent="center"
       alignItems="center"
@@ -39,7 +39,7 @@ export default function AboutUs() {
           >
             {" "}
             <Image
-              src="/nishi.jpg"
+              src="nishi.jpg"
               maxW="100%"
               display="block"
               h={{ base: "100%", md: "300px" }}

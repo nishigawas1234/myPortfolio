@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import {
     Box,
     Flex,
@@ -21,11 +21,13 @@ import {
     AddIcon,
   } from "@chakra-ui/icons";
   import "../Navbar.css";
-  import nishi_resume from "../Nishigandha_gawas_resume.pdf";
+  import nishi_resume from "../Nishigandha-resume.pdf";
   
   export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const [activeTab, setActiveTab] = useState('About')
+ 
   
     const onButtonClick = () => {
       window.open(nishi_resume);
@@ -63,31 +65,31 @@ import {
                   display={{ base: "none", md: "flex" }}
                   id="myDIV"
                 >
-                  <Button className="btnRes" variant="ghost">
-                    <a href="#about">
+                  <Button className="btnRes hover-underline-animation"  variant="ghost" onClick={()=>{setActiveTab('About')}}>
+                    <a href="#">
                       {" "}
-                      <b>About</b>
+                      <Text color={activeTab === "About" ? "red" : "white"}  fontWeight="bold">About</Text>
                     </a>
                   </Button>
-                  <Button className="btnRes" variant="ghost"> 
+                  <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Skills')}}> 
                     <a href="#Skills">
-                      <b>Skills</b>
+                      <Text color={activeTab === "Skills" ? "red" : "white"} fontWeight="bold">Skills</Text>
                     </a>
                   </Button>
-                  <Button className="btnRes" variant="ghost">
+                  <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Projects')}}>
                     <a href="#Projects">
-                      <b>Projects</b>
+                      <Text color={activeTab === "Projects" ? "red" : "white"} fontWeight="bold">Projects</Text>
                     </a>
                   </Button>
   
-                  <Button className="btnRes" variant="ghost"> 
+                  <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Contact')}}> 
                     <a href="#Contact">
-                      <b>Contact Me</b>
+                      <Text color={activeTab === "Contact" ? "red" : "white"}>Contact Me</Text>
                     </a>
                   </Button>
-                  <Button className="btnRes" variant="ghost">
+                  <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Social')}}>
                     <a href="#Social">
-                      <b>Social</b>
+                      <Text color={activeTab === "Social" ? "red" : "white"}>Social</Text>
                     </a>
                   </Button>
                 </HStack>
