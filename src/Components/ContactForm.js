@@ -54,6 +54,7 @@ export default function ContactForm() {
             <Input
             // bg={useColorModeValue("white", "gray.800")}
             border="1.5px solid #14191b"
+            color="black"
             bg="white"
               type="text"
               name="name"
@@ -67,6 +68,7 @@ export default function ContactForm() {
             <Input
             // bg={useColorModeValue("white", "gray.800")}
             bg="white"
+            color="black"
               type="email"
               border="1.5px solid #14191b"
               name="email"
@@ -80,6 +82,7 @@ export default function ContactForm() {
             <Textarea
             // bg={useColorModeValue("white", "gray.800")}
             bg="white"
+            color="black"
             border="1.5px solid #14191b"
               name="message"
               value={formData.message}
