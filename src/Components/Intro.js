@@ -8,7 +8,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
-import nishi_resume from "../Nishigandha_gawas_resume.pdf";
+import nishi_resume from "../Nishigandha-resume.pdf";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
@@ -105,7 +105,7 @@ export default function Intro() {
   return (
     <Flex
       id="intro"
-      h="700px"
+      h="800px"
       justifyContent="center"
       alignItems="center"
       flexDir="column"
@@ -156,7 +156,8 @@ export default function Intro() {
           href="#Contact"
           size={["sm", "md"]}
           fontWeight="normal"
-          download="nishi_resume"
+          as="a"
+        
         >
           Contact me
         </Button>

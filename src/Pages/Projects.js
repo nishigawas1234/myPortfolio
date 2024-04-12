@@ -52,7 +52,7 @@ export default function Projects() {
             </Link>
           </GridItem>
           <GridItem colSpan={2} bg="papayawhip">
-            <Link href="https://memo-mind-rm97.vercel.app/">
+            <Link href="https://my-portfolio-vts8.vercel.app/">
           <Box className="container"  w="100%" _hover={{background:"rgb(59 130 246)"}}>
             <Image
               src="portfolio.png"
