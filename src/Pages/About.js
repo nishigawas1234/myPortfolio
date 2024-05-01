@@ -27,8 +27,8 @@ export default function AboutUs() {
       <Text fontSize="4xl" fontWeight="bold" color={"red"} mb={16} mt={2}>
         About
       </Text>
-      <HStack flexDir={{ base: "column", md: "row" }} p={4}>
-        <Box w={{ base: "100%", md: "50%" }}>
+      <HStack flexDir={{ base: "column", md: "row" }} h="auto" w="60%"  bg={useColorModeValue("#fff", "#242323")} boxShadow={"lg"}>
+        <Box w={{ base: "100%", md: "50%" }} borderColor="none">
           <Box
             display="flex"
             justifyContent="center"
@@ -39,15 +39,15 @@ export default function AboutUs() {
           >
             {" "}
             <Image
-              src="nishi.jpg"
+              src="profile.png"
               maxW="100%"
               display="block"
-              h={{ base: "100%", md: "300px" }}
+              h={{ base: "100%", md: "auto" }}
               alt="Image"
               w={{ base: "auto", md: "auto" }}
-              borderRadius={{ base: "0", md: "50%" }}
+              
             />
-          </Box>{" "}
+          </Box>
         </Box>
         <Box w={{ base: "100%", md: "50%" }}>
           <Text

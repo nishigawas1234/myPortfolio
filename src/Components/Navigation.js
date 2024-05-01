@@ -34,11 +34,15 @@ import {
     };
   
     return (
-      <div id="navFix">
+      <div id="navFix" >
         <Box
           bg={useColorModeValue("gray.100", "blackAlpha.900")}
           px={9}
           width={["100%"]}
+          borderBottom="1px solid" borderColor={useColorModeValue("#EDF2F7", "#242424")}
+         
+         backdropFilter="blur(5px)"
+          
         >
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             <HStack w="42%">
