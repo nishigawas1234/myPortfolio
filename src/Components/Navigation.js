@@ -34,11 +34,15 @@ import {
     };
   
     return (
-      <div id="navFix">
+      <div id="navFix" >
         <Box
           bg={useColorModeValue("gray.100", "blackAlpha.900")}
           px={9}
           width={["100%"]}
+          borderBottom="1px solid" borderColor={useColorModeValue("#EDF2F7", "#242424")}
+         
+         backdropFilter="blur(5px)"
+          
         >
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             <HStack w="42%">
@@ -58,6 +62,7 @@ import {
                 display={{ md: "none" }}
                 onClick={isOpen ? onClose : onOpen}
               /> */}
+
               <HStack spacing={8} alignItems={"center"}>
                 <HStack
                   as={"nav"}
@@ -68,28 +73,28 @@ import {
                   <Button className="btnRes hover-underline-animation"  variant="ghost" onClick={()=>{setActiveTab('About')}}>
                     <a href="#">
                       {" "}
-                      <Text color={activeTab === "About" ? "red" : colorMode === "dark" ? "white" : "black"}  fontWeight="bold">About</Text>
+                      <Text color={activeTab === "About" ? "red" : colorMode == "dark" ? "white" : "black"}  fontWeight="bold">About</Text>
                     </a>
                   </Button>
                   <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Skills')}}> 
                     <a href="#Skills">
-                      <Text color={activeTab === "Skills" ? "red" : colorMode === "dark" ? "white" : "black"} fontWeight="bold">Skills</Text>
+                      <Text color={activeTab === "Skills" ? "red" : colorMode == "dark" ? "white" : "black"} fontWeight="bold">Skills</Text>
                     </a>
                   </Button>
                   <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Projects')}}>
                     <a href="#Projects">
-                      <Text color={activeTab === "Projects" ? "red" : colorMode === "dark" ? "white" : "black"} fontWeight="bold">Projects</Text>
+                      <Text color={activeTab === "Projects" ? "red" : colorMode == "dark" ? "white" : "black"} fontWeight="bold">Projects</Text>
                     </a>
                   </Button>
   
                   <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Contact')}}> 
                     <a href="#Contact">
-                      <Text color={activeTab === "Contact" ? "red" : colorMode === "dark" ? "white" : "black"}>Contact Me</Text>
+                      <Text color={activeTab === "Contact" ? "red" : colorMode == "dark" ? "white" : "black"}>Contact Me</Text>
                     </a>
                   </Button>
                   <Button className="btnRes hover-underline-animation" variant="ghost" onClick={()=>{setActiveTab('Social')}}>
                     <a href="#Social">
-                      <Text color={activeTab === "Social" ? "red" : colorMode === "dark" ? "white" : "black"}>Social</Text>
+                      <Text color={activeTab === "Social" ? "red" : colorMode == "dark" ? "white" : "black"}>Social</Text>
                     </a>
                   </Button>
                 </HStack>
