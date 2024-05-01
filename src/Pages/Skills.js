@@ -56,7 +56,7 @@ export default function Skills() {
       alignItems="center"
       bg={useColorModeValue("gray.100", "#0c0c0c")}
       pb={12}
-      p="60px 0"
+      p="60px 20px"
     >
       <Box
         w={{ base: "100%", md: "60%" }}
