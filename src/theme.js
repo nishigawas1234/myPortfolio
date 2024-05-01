@@ -6,6 +6,11 @@ const theme = extendTheme({
     body: 'Poppins, sans-serif',
     heading: 'Poppins, sans-serif',
   },
+  config
 });
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+}
 
 export default theme;
