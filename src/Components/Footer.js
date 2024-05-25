@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Text, useToast } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Text, useToast,  useColorModeValue, } from "@chakra-ui/react";
 import React from "react";
 import Linkedin from "./Icons/Linkedin";
 import GitHub from "./Icons/GitHub";
@@ -19,7 +19,8 @@ export default function Footer() {
   };
   return (
     <Flex
-      bg="#14191b"
+    bg={useColorModeValue("#d9e6f3", "#14191b")}
+      // bg="#14191b"
       py={30}
       id="Social"
       justifyContent="center"
@@ -27,7 +28,7 @@ export default function Footer() {
       flexDir = "column"
       h="auto"
     >
-      <Text fontSize="4xl" fontWeight="bold" color={"#fff"} mb={16} mt={2}>
+      <Text fontSize="4xl" fontWeight="bold" color={useColorModeValue("black", "#ff")} mb={16} mt={2}>
         Nishigandha
       </Text>
       <Grid
@@ -41,21 +42,21 @@ export default function Footer() {
             href="https://www.linkedin.com/in/nishigandha-gawas-868935203/"
             target="_blank"
           >
-            <Linkedin m="auto" w="40px" h="auto" color="#fff" />
+            <Linkedin m="auto" w="40px" h="auto" color={useColorModeValue("black", "#ff")}/>
           </a>
         </GridItem>
         <GridItem w="100%">
           <a href="https://github.com/nishigawas1234" target="_blank">
-            <GitHub m="auto" w="40px" h="auto"  color="#fff"/>
+            <GitHub m="auto" w="40px" h="auto" color={useColorModeValue("black", "#ff")}/>
           </a>
         </GridItem>
         <GridItem w="100%">
           <a href="mailto:gawasnishigandha@gmail.com" target="_blank">
-            <Email m="auto" w="40px" h="auto" color="#fff"/>
+            <Email m="auto" w="40px" h="auto"color={useColorModeValue("black", "#ff")}/>
           </a>
         </GridItem>
         <GridItem w="100%">
-          <Call m="auto" w="40px" h="auto" onClick={CopyPhone} color="#fff"/>
+          <Call m="auto" w="40px" h="auto" onClick={CopyPhone} color={useColorModeValue("black", "#ff")}/>
         </GridItem>
       </Grid>
     </Flex>
