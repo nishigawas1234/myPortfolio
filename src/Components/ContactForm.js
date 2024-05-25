@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useRef  } from 'react';
 import {
   Box,
   Text,
@@ -11,8 +11,10 @@ import {
   useToast,
   useColorModeValue
 } from "@chakra-ui/react";
+import emailjs from '@emailjs/browser';
 
 export default function ContactForm() {
+  const form = useRef();
 
   const [formData, setFormData] = useState({
     name: '',
@@ -31,9 +33,21 @@ export default function ContactForm() {
   };
 
   const handleSubmit = e => {
+  
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+   
+    emailjs
+    .sendForm('service_i7jplzz', 'template_inrtdb8', form.current, {
+      publicKey: 'ImGqIFJwmRsLmixKG',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      },
+    );
     // Example: Show a toast notification
     toast({
       title: "Form submitted",
@@ -48,7 +62,7 @@ export default function ContactForm() {
   return (
    
       
-        <form onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit} ref={form}>
           <FormControl id="name" mb={4}>
             <FormLabel>Name:</FormLabel>
             <Input
