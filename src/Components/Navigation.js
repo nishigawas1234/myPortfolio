@@ -12,6 +12,7 @@ import {
     useDisclosure,
     IconButton,
     Hide,
+    Image
   } from "@chakra-ui/react";
   import {
     MoonIcon,
@@ -45,6 +46,22 @@ import {
           
         >
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+          <a href="#">   
+           <HStack ml="5%">  
+           
+           <Image
+            src='profile.png'
+            w="50px"
+            borderRadius="50%"
+            className="image"
+            alt="Dan Abramov"
+            h="50px"
+          />
+            <Text>NISHI</Text>
+          
+            </HStack>  
+            </a>
+      
             <HStack w="42%">
               {/* <Name /> */}
   
@@ -52,7 +69,11 @@ import {
                 {" "}
                 {/* <Photo /> */}
               </Show>
-            </HStack>
+            </HStack>  
+             <Box>
+         
+              </Box>
+
   
             <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
               {/* <IconButton
@@ -62,7 +83,7 @@ import {
                 display={{ md: "none" }}
                 onClick={isOpen ? onClose : onOpen}
               /> */}
-
+           
               <HStack spacing={8} alignItems={"center"}>
                 <HStack
                   as={"nav"}
