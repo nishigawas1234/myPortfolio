@@ -14,38 +14,43 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import ProgressBarCom from "../Components/ProgressBar";
+import ProgressBarCom from "../Components/ProgressBar"; 
+import SkillBox from "../Components/SkillBox";
 
 export default function Skills() {
   const { colorMode, toggleColorMode } = useColorMode();
   const skillData = [
     {
-      title: "HTML5",
-      value: "80",
+      title: "icons8-html-logo-144.png",
+      value: "HTML5",
     },
     {
-      title: "CSS",
-      value: "80",
+      title: "icons8-css-logo-144.png",
+      value: "CSS3",
     },
     {
-      title: "Bootstrap",
-      value: "50",
+      title: "icons8-javascript-144.png",
+      value: "JavaScript",
     },
     {
-      title: "Chakra ui",
-      value: "80",
+      title: "icons8-bootstrap-logo-144.png",
+      value: "Bootstrap",
     },
     {
-      title: "React js",
-      value: "50",
+      title: "icons8-angularjs-144.png",
+      value: "Angularjs",
     },
     {
-      title: "Next js",
-      value: "70",
+      title: "icons8-react-200.png",
+      value: "React",
     },
     {
-      title: "JSON",
-      value: "80",
+      title: "icons8-next.js-144.png",
+      value: "Next js",
+    },
+    {
+      title: "icons8-chakra-ui-144.png",
+      value: "Chakra UI",
     },
   ];
   return (
@@ -62,16 +67,18 @@ export default function Skills() {
         w={{ base: "100%", md: "60%" }}
       >
         <Text fontSize="4xl" fontWeight="bold" color={"red"} mb={16} mt={2}>
-          Skils
+          Skills
         </Text>
-        <Grid templateColumns="repeat(2, 1fr)" gap={8}>
-          {skillData.map((item, index) => {
+        <Grid templateColumns="repeat(4, 1fr)" gap={8}>
+      {skillData.map((item, index) => {
             return (
-              <GridItem w="100%" key={index}>
-                <ProgressBarCom title={item.title} value={item.value} />
-              </GridItem>
+              // <GridItem w="100%" key={index}>
+              //   <ProgressBarCom title={item.title} value={item.value} />
+              // </GridItem>
+              <SkillBox img={item.title} label={item.value}/>
             );
-          })}
+          })} 
+         
         </Grid>
       </Box>
     </Flex>
