@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         
       <Routes>
-        <Route path="/t" element={<Dashboard />}/>
+        <Route path="/n" element={<Dashboard />}/>
      
       </Routes>
     </BrowserRouter> 
