@@ -10,6 +10,7 @@ const theme = extendTheme({
   fonts: {
     body: 'Poppins, sans-serif',
     heading: 'Poppins, sans-serif',
+    
   },
   config
 });
