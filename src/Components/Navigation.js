@@ -22,7 +22,7 @@ import {
     AddIcon,
   } from "@chakra-ui/icons";
   import "../Navbar.css";
-  import nishi_resume from "../Nishigandha-resume.pdf";
+  import nishi_resume from "../nishi-resume.pdf";
   
   export default function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();

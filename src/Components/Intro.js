@@ -8,7 +8,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { ReactTyped } from "react-typed";
-import nishi_resume from "../Nishigandha-resume.pdf";
+import nishi_resume from "../nishi-resume.pdf";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 
